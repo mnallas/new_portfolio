@@ -23,27 +23,99 @@
             ><i class="material-icons">menu</i></a
           >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">About</a></li>
-            <li><a href="badges.html">Portfolio</a></li>
+            <li id="aboutBtn"><a>About</a></li>
+            <li id="portfolioBtn"><a>Portfolio</a></li>
             <li><a href="collapsible.html">Contact</a></li>
           </ul>
         </div>
       </nav>
     </div>
-    <div>
-      <img
-        src="https://images.unsplash.com/photo-1536382846503-832f3d8c7742?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-        style="max-width: 100%;"
-        alt="#"
-      />
-      <div>
-        <h1 class="centered font">Hi! My name is Myhkas</h1>
-        <h4 class="bottom font">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est itaque
-          repellat inventore quae cum! Quidem quasi quibusdam vero rerum enim,
-          veniam tempore aspernatur suscipit quod officiis sed ducimus, cumque
-          ut.
-        </h4>
+
+    <div class="row">
+      <div class="col s12">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1536382846503-832f3d8c7742?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            style="max-width: 100%;"
+            alt="#"
+          />
+          <h1 class="centered font">Hi! My name is Myhkas</h1>
+          <h4 class="bottom font flow-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est itaque
+            repellat inventore quae cum! Quidem quasi quibusdam vero rerum enim,
+            veniam tempore aspernatur suscipit quod officiis sed ducimus, cumque
+            ut.
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="aboutMe">
+      <h2 class="center font">About Me</h2>
+      <h3>Myhkas Nallas</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt
+        eum quibusdam illo enim fuga adipisci cum neque, quisquam similique
+        commodi eos temporibus suscipit nulla doloremque aperiam architecto
+        consequuntur maxime!
+      </p>
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg" />
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>
+                I am a very simple card. I am good at containing small bits of
+                information. I am convenient because I require little markup to
+                use effectively.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div id="portfolio">
+            <h2 class="center font">Porfolio</h2>
+            <div class="col s12">
+              <div class="carousel carousel-slider center">
+                <div class="carousel-fixed-item center"></div>
+                <div
+                  class="carousel-item red white-text"
+                  href="#one!"
+                  style="
+                    background-image: url(https://picsum.photos/id/237/200/300);
+                  "
+                >
+                  <h2>Recipe App</h2>
+                  <div class="chip">JavaScript</div>
+                  <div class="chip">BootStrap</div>
+                  <div class="chip">Jquery</div>
+                </div>
+                <div class="carousel-item amber white-text" href="#two!">
+                  <h2>Second Panel</h2>
+                  <p class="white-text">This is your second panel</p>
+                </div>
+                <div class="carousel-item green white-text" href="#three!">
+                  <h2>Third Panel</h2>
+                  <p class="white-text">This is your third panel</p>
+                </div>
+                <div class="carousel-item blue white-text" href="#four!">
+                  <h2>Fourth Panel</h2>
+                  <p class="white-text">This is your fourth panel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -52,21 +124,12 @@
       <li><a href="badges.html">Portfolio</a></li>
       <li><a href="collapsible.html">Contact</a></li>
     </ul>
-    <div class="carousel carousel-slider">
-      <a class="carousel-item" href="#one!"
-        ><img src="https://picsum.photos/id/237/200/300"
-      /></a>
-      <a class="carousel-item" href="#two!"
-        ><img src="https://picsum.photos/id/237/200/300"
-      /></a>
-      <a class="carousel-item" href="#three!"
-        ><img src="https://lorempixel.com/800/400/food/3"
-      /></a>
-      <a class="carousel-item" href="#four!"
-        ><img src="https://lorempixel.com/800/400/food/4"
-      /></a>
-    </div>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+  ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./app.js"></script>
 </html>
