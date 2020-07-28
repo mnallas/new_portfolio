@@ -18,23 +18,24 @@
     <div class="navbar-fixed">
       <nav class="nav-extended #424242 grey darken-3">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Myhkas Nallas</a>
+          <a id="homeBtn" href="#" class="brand-logo font">Myhkas Nallas</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
             ><i class="material-icons">menu</i></a
           >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li id="aboutBtn"><a>About</a></li>
-            <li id="portfolioBtn"><a>Portfolio</a></li>
-            <li><a href="collapsible.html">Contact</a></li>
+            <li id="aboutBtn" class="font"><a>About</a></li>
+            <li id="portfolioBtn" class="font"><a>Portfolio</a></li>
+            <li id="contactBtn" class="font"><a>Contact</a></li>
           </ul>
         </div>
       </nav>
     </div>
 
-    <div class="row">
+    <div id="home" class="row">
       <div class="col s12">
         <div>
           <img
+            class="responsive-img"
             src="https://images.unsplash.com/photo-1536382846503-832f3d8c7742?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
             style="max-width: 100%;"
             alt="#"
@@ -52,19 +53,27 @@
 
     <div class="container" id="aboutMe">
       <h2 class="center font">About Me</h2>
-      <h3>Myhkas Nallas</h3>
-      <p>
+      <img
+        style="width: 50%;"
+        class="circle center"
+        src="./assets/aboutme.jpg"
+        alt=""
+      />
+      <h3 class="font">Myhkas Nallas</h3>
+      <p class="font">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt
         eum quibusdam illo enim fuga adipisci cum neque, quisquam similique
         commodi eos temporibus suscipit nulla doloremque aperiam architecto
-        consequuntur maxime!
+        consequuntur maxime! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Officia similique quam earum voluptates odio magni, facere aut
+        perferendis, quasi minus veritatis delectus praesentium sit harum nisi
+        et nulla saepe! Earum.
       </p>
       <div class="row">
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
               <img src="images/sample-1.jpg" />
-              <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
               <p>
@@ -89,32 +98,86 @@
               <div class="carousel carousel-slider center">
                 <div class="carousel-fixed-item center"></div>
                 <div
-                  class="carousel-item red white-text"
+                  class="carousel-item black-text responsive-img bgsize"
                   href="#one!"
+                  style="background-image: url(./assets/recipe_app.png);"
+                >
+                  <h2 class="font">Recipe App</h2>
+                  <div class="chip blue">HTML</div>
+                  <div class="chip red">CSS</div>
+                  <div class="chip yellow">JavaScript</div>
+                  <div class="chip purple">BootStrap</div>
+                  <div class="chip green">Jquery</div>
+                </div>
+                <div
+                  class="carousel-item black-text responsive-img bgsize"
+                  href="#two!"
+                  style="background-image: url(./assets/weather_app2.png);"
+                >
+                  <h2 class="font">Weather App</h2>
+                  <div class="chip blue">HTML</div>
+                  <div class="chip red">CSS</div>
+                  <div class="chip yellow">JavaScript</div>
+                  <div class="chip purple">BootStrap</div>
+                  <div class="chip green">Jquery</div>
+                </div>
+                <div
+                  class="carousel-item black-text responsive-img bgsize"
+                  href="#three!"
+                  style="background-image: url(./assets/todo_list.png);"
+                >
+                  <h2 class="font">Workday Scheduler</h2>
+                  <div class="chip blue">HTML</div>
+                  <div class="chip red">CSS</div>
+                  <div class="chip yellow">JavaScript</div>
+                  <div class="chip purple">BootStrap</div>
+                  <div class="chip green">Jquery</div>
+                </div>
+                <div
+                  class="carousel-item black-textback responsive-img bgsize"
+                  href="#four!"
                   style="
-                    background-image: url(https://picsum.photos/id/237/200/300);
+                    background-image: url(./assets/password_generator.png);
                   "
                 >
-                  <h2>Recipe App</h2>
-                  <div class="chip">JavaScript</div>
-                  <div class="chip">BootStrap</div>
-                  <div class="chip">Jquery</div>
+                  <h2 class="font">Password Generator</h2>
+                  <div class="chip blue">HTML</div>
+                  <div class="chip red">CSS</div>
+                  <div class="chip yellow">JavaScript</div>
+                  <div class="chip purple">BootStrap</div>
+                  <div class="chip green">Jquery</div>
                 </div>
-                <div class="carousel-item amber white-text" href="#two!">
-                  <h2>Second Panel</h2>
-                  <p class="white-text">This is your second panel</p>
-                </div>
-                <div class="carousel-item green white-text" href="#three!">
-                  <h2>Third Panel</h2>
-                  <p class="white-text">This is your third panel</p>
-                </div>
-                <div class="carousel-item blue white-text" href="#four!">
-                  <h2>Fourth Panel</h2>
-                  <p class="white-text">This is your fourth panel</p>
+                <div
+                  class="carousel-item black-textback responsive-img bgsize"
+                  href="#four!"
+                  style="background-image: url(./assets/shoequelize.png);"
+                >
+                  <h2 class="font">Shoequelize</h2>
+                  <div class="chip blue">HTML</div>
+                  <div class="chip red">CSS</div>
+                  <div class="chip yellow">JavaScript</div>
+                  <div class="chip pink">Materialize</div>
+                  <div class="chip green">Jquery</div>
+                  <div class="chip light-blue">Sequelize</div>
+                  <div class="chip light-green">nodeJs</div>
                 </div>
               </div>
+              <h6>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                ut voluptates dolore odio sequi saepe voluptatum modi maxime
+                assumenda amet, eos molestias est et labore id consectetur
+                reiciendis. Voluptas, ea!
+              </h6>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="container">
+      <div class="row">
+        <div class="col s12">
+          <h2 class="font center">Contact</h2>
         </div>
       </div>
     </div>

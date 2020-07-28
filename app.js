@@ -4,6 +4,15 @@ $(document).ready(function () {
     fullWidth: true,
   });
 
+  $(document).on("click", "#homeBtn", () => {
+    $("html, body").animate(
+      {
+        scrollTop: $("#home").offset().top,
+      },
+      1500
+    );
+  });
+
   $(document).on("click", "#portfolioBtn", () => {
     $("html, body").animate(
       {
@@ -17,6 +26,15 @@ $(document).ready(function () {
     $("html, body").animate(
       {
         scrollTop: $("#aboutMe").offset().top,
+      },
+      1500
+    );
+  });
+
+  $(document).on("click", "#contactBtn", () => {
+    $("html, body").animate(
+      {
+        scrollTop: $("#contact").offset().top,
       },
       1500
     );
